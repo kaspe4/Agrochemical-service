@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем таблицу стилей -->
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+    </header>
+    
+    <nav>
+     <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li class="dropdown">
+                    <a href="#" class="dropbtn">О нас</a>
+                    <div class="dropdown-content">
+                        <a href="История.html">История</a>
+                        <a href="Структура.html">Структура организации</a>
+                        <a href="Сертефикаты.html">Сертификаты</a>
+                    </div>
+                </li>
+            <li><a href="Услуги.html">Услуги</a></li>
+            <li><a href="контакты.html">Контакты</a></li>
+     </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Наши контактные данные</h2>
+            <p>Приёмная: 8 (84463) 2-64-58</p>
+            <p> испытательная лаборатория: 2-43-85</p>
+            <p>E-mail: agrohim_34_3@mail.ru</p>
+            <p>403343, Волгоградская обл., г. Михайловка, ул. Серафимовича, 28 </p>
+        </section>
+
+        <section>
+            <h2>Свяжитесь с нами</h2>
+            <form action="send_form.php" method="post">
+                <label for="name">Ваше имя:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Ваш email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Сообщение:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+        <script src="script.js"></script>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="company-info">
+                <h3>МИХАЙЛОВСКИЙ ФЛ ФГБУ "ЦАС "ВОЛГОГРАДСКИЙ"</h3>
+                <p> Мы помогаем сельскохозяйственным производителям</p>
+                <p>  оптимизировать использование ресурсов, повышая урожайность</p>
+                <p>и улучшая качество продукции.</p>
+                <p>403343, Волгоградская обл., г. Михайловка, ул. Серафимовича, 28</p>
+            </div>
+            <div class="contact-info">
+                <h3>Контактная информация</h3>
+                <p>Приемная: 8 (84463) 2-64-58</p>
+                <p>Испытательная лаборатория: 2-43-85</p>
+                <p>Email:agrohim_34_3@mail.ru</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
